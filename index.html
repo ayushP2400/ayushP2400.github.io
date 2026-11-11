@@ -14,8 +14,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="theme-color" content="#f6f3ec" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#12110f" media="(prefers-color-scheme: dark)">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23e8492a'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' text-anchor='middle' fill='%23fff'%3EAP%3C/text%3E%3C/svg%3E">
-<link rel="preload" href="fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23e8492a'/%3E%3Ctext x='32' y='43' font-family='Helvetica,Arial,sans-serif' font-weight='700' font-size='26' text-anchor='middle' fill='%23fff'%3EAP%3C/text%3E%3C/svg%3E">
 <link rel="preload" href="fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
 <script>
 (function(){var r=document.documentElement,t;r.classList.add('js');try{t=localStorage.getItem('theme')}catch(e){}if(t==='light'||t==='dark')r.dataset.theme=t})();
@@ -24,15 +23,12 @@
 {"@context":"https://schema.org","@type":"Person","name":"Ayush Pathak","url":"https://ayushp2400.github.io/","jobTitle":"Senior iOS Engineer","worksFor":{"@type":"Organization","name":"Numerator"},"address":{"@type":"PostalAddress","addressLocality":"Jaipur","addressCountry":"IN"},"knowsAbout":["Swift","SwiftUI","UIKit","iOS SDK design","Test automation","CI/CD"],"sameAs":["https://github.com/ayushP2400","https://www.linkedin.com/in/ayush-pathak-a563a9151/","https://stackoverflow.com/users/9376772/pathak-ayush"]}
 </script>
 <style>
-@font-face{font-family:"Instrument Serif";src:url(fonts/instrument-serif.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:"Instrument Serif";src:url(fonts/instrument-serif-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
 @font-face{font-family:"Geist";src:url(fonts/geist.woff2) format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
 @font-face{font-family:"Geist Mono";src:url(fonts/geist-mono.woff2) format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
 
 :root{
   --bg:#f6f3ec;--surface:#fffdf8;--ink:#17140f;--muted:#6b655a;--line:#ded8ca;
   --accent:#d8401f;--accent-soft:#f9e3da;--ok:#2f7d4f;
-  --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
   --sans:"Geist",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
   --mono:"Geist Mono",ui-monospace,"SF Mono",Menlo,monospace;
   color-scheme:light;
@@ -65,7 +61,7 @@ ul{padding:0;list-style:none}
 .nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .3s}
 .nav.stuck{border-color:var(--line)}
 .nav .wrap{display:flex;align-items:center;gap:28px;height:64px}
-.logo{font:400 26px/1 var(--serif);letter-spacing:-.01em}
+.logo{font:600 18px/1 var(--sans);letter-spacing:-.025em}
 .logo i{color:var(--accent);font-style:normal}
 .links{display:flex;gap:26px;margin-left:auto}
 .links a{font-size:14.5px;color:var(--muted);transition:color .2s;position:relative}
@@ -80,7 +76,8 @@ ul{padding:0;list-style:none}
 .status{display:inline-flex;align-items:center;gap:10px;margin-bottom:28px}
 .dot{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 0 color-mix(in srgb,var(--ok) 60%,transparent);animation:pulse 2.4s infinite}
 @keyframes pulse{70%{box-shadow:0 0 0 9px transparent}100%{box-shadow:0 0 0 0 transparent}}
-h1{font:400 clamp(46px,7.4vw,92px)/.98 var(--serif);letter-spacing:-.022em;text-wrap:balance}
+h1{font:600 clamp(38px,5.6vw,68px)/1.06 var(--sans);letter-spacing:-.045em;text-wrap:balance}
+em{font-style:normal}
 h1 em{color:var(--accent)}
 .lede{margin-top:28px;max-width:54ch;font-size:18.5px;color:var(--muted)}
 .lede strong{color:var(--ink);font-weight:500}
@@ -111,7 +108,7 @@ section{padding:84px 0;border-top:1px solid var(--line)}
 .sec{display:grid;grid-template-columns:220px minmax(0,1fr);gap:48px}
 .sec-head{position:sticky;top:96px;align-self:start}
 .sec-head .mono{color:var(--accent)}
-h2{font:400 clamp(34px,4vw,46px)/1.05 var(--serif);letter-spacing:-.015em;margin-top:10px}
+h2{font:600 clamp(26px,3vw,34px)/1.1 var(--sans);letter-spacing:-.035em;margin-top:10px}
 
 /* work */
 .job+.job{margin-top:56px;padding-top:56px;border-top:1px dashed var(--line)}
@@ -131,7 +128,7 @@ a.card:hover{transform:translateY(-4px);border-color:var(--accent)}
 .card.wide{grid-column:1/-1}
 .card-top{display:flex;justify-content:space-between;align-items:center;gap:12px}
 .badge{font:500 11px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:6px 9px;border-radius:999px;background:var(--accent-soft);color:var(--accent)}
-.card h3{font:400 30px/1.1 var(--serif);letter-spacing:-.01em}
+.card h3{font:600 22px/1.2 var(--sans);letter-spacing:-.025em}
 .card p{color:var(--muted);font-size:15.5px}
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:8px}
 .tags span,.chips span{font:400 12.5px/1 var(--mono);padding:6px 9px;border:1px solid var(--line);border-radius:6px;color:var(--muted)}
@@ -156,7 +153,7 @@ a.card:hover .arrow{color:var(--accent);transform:translate(2px,-2px)}
 
 /* contact */
 .contact{padding:110px 0 80px;text-align:center}
-.contact h2{font-size:clamp(44px,7.5vw,96px);line-height:1;margin:14px auto 0;max-width:14ch}
+.contact h2{font-size:clamp(36px,6vw,68px);line-height:1.05;letter-spacing:-.045em;margin:14px auto 0;max-width:14ch}
 .contact h2 em{color:var(--accent)}
 .mail{display:inline-block;margin-top:34px;font:400 clamp(18px,2.6vw,26px) var(--mono);border-bottom:1.5px solid var(--accent);padding-bottom:4px;transition:color .2s}
 .mail:hover{color:var(--accent)}
@@ -222,11 +219,10 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
     <div>
       <p class="status mono"><span class="dot" aria-hidden="true"></span>Senior iOS Engineer · Jaipur, India</p>
       <h1>I build iOS apps and SDKs that <em>hold up</em> in production.</h1>
-      <p class="lede">I'm <strong>Ayush Pathak</strong>. For 8+ years I've shipped and operated iOS software in Swift, SwiftUI and UIKit. Today I lead an internal Swift package that runs inside a consumer app with <strong>1M+ active users</strong>, owning it from design and release to production monitoring.</p>
+      <p class="lede">I'm <strong>Ayush Pathak</strong>. For 8+ years I've shipped and operated iOS software in Swift, SwiftUI and UIKit. Today I lead an internal Swift SDK that runs inside a consumer app with <strong>1M+ active users</strong>, owning it from design and release to production monitoring.</p>
       <div class="cta">
         <a class="btn solid" href="mailto:ayush.pathak021@outlook.com">Get in touch
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a class="btn" href="Ayush_Pathak_CV.pdf" target="_blank" rel="noopener">Résumé <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 11l6 6 6-6M5 20h14"/></svg></a>
         <a class="btn" href="https://github.com/ayushP2400" target="_blank" rel="noopener">GitHub</a>
         <a class="btn" href="https://www.linkedin.com/in/ayush-pathak-a563a9151/" target="_blank" rel="noopener">LinkedIn</a>
         <a class="btn" href="https://stackoverflow.com/users/9376772/pathak-ayush" target="_blank" rel="noopener">Stack Overflow</a>
@@ -238,7 +234,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
       <ol>
         <li><span class="ck">✓</span><span class="fn">testShipsSDKInProduction()</span><span class="val">1M+ users</span></li>
         <li><span class="ck">✓</span><span class="fn">testRaisesUnitCoverage()</span><span class="val">25% → 70%</span></li>
-        <li><span class="ck">✓</span><span class="fn">testFixesWebViewLeak()</span><span class="val">−80% memory</span></li>
+        <li><span class="ck">✓</span><span class="fn">testFixesMemoryLeak()</span><span class="val">−80% memory</span></li>
         <li><span class="ck">✓</span><span class="fn">testBuildsEveryPR()</span><span class="val">CI/CD</span></li>
         <li><span class="ck">✓</span><span class="fn">testMentorsEngineers()</span><span class="val">reviews</span></li>
       </ol>
@@ -255,12 +251,12 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
         <div class="job-top"><h3>Numerator</h3><span class="mono">Dec 2022 — Present</span></div>
         <p class="role">Senior iOS Engineer I · iOS Technical Lead</p>
         <ul class="points">
-          <li><span>SDK design</span><p>Lead engineer of the <b>Link Swift package</b>, an internal SDK for market data collection inside a consumer app with 1M+ active users. Built as a self-contained Swift Package Manager module, first as sole engineer, and now being extended for reuse across more internal apps.</p></li>
-          <li><span>Architecture</span><p>Shape architecture with a fellow senior engineer: MVVM, async/await, and a UIKit-to-SwiftUI migration using generics. Designed the local database, analytics and core modules, and helped drive the move from <b>Realm to SwiftData</b>.</p></li>
-          <li><span>Performance</span><p>Tracked down a leak where 3–4 concurrent WebViews were never deallocated, using Instruments and the Memory Graph Debugger. The fix cut <b>~200&nbsp;MB memory spikes by roughly 80%</b>, back to the normal 30–40&nbsp;MB range.</p></li>
-          <li><span>Reliability</span><p>Caught a crash-rate spike in Crashlytics, halted the release, reproduced the issue, wrote a regression test, then shipped and monitored the fix.</p></li>
+          <li><span>SDK design</span><p>Lead engineer of an <b>internal Swift SDK</b> that ships inside a consumer app with 1M+ active users. Built as a self-contained Swift Package Manager module, first as sole engineer, and designed for reuse across multiple apps.</p></li>
+          <li><span>Architecture</span><p>Shape architecture with a fellow senior engineer: MVVM, async/await, and a UIKit-to-SwiftUI migration using generics. Designed the persistence, analytics and core modules, and contributed to <b>technology selection</b> for the data layer.</p></li>
+          <li><span>Performance</span><p>Tracked down a memory leak with Instruments and the Memory Graph Debugger. The fix cut <b>memory spikes by roughly 80%</b>, back to the normal range.</p></li>
+          <li><span>Reliability</span><p>Caught a crash-rate spike in production monitoring, halted the release, reproduced the issue, wrote a regression test, then shipped and monitored the fix.</p></li>
           <li><span>Testing</span><p>Raised unit-test coverage from <b>~25% to ~70% in one year</b> by requiring tests for every feature, bug fix and touched legacy code. CI-enforced unit tests on every PR, plus curated AI-generated edge cases for QA regression.</p></li>
-          <li><span>CI/CD</span><p>Maintain GitHub Actions pipelines for tests, summaries and SwiftLint reports. Built a pipeline that builds, code-signs and publishes an installable build link for every PR adopting a new package version.</p></li>
+          <li><span>CI/CD</span><p>Maintain GitHub Actions pipelines for tests, summaries and SwiftLint reports. Built a pipeline that builds, code-signs and publishes an installable build for every PR adopting a new SDK version.</p></li>
           <li><span>AI tooling</span><p>Daily user of GitHub Copilot and ChatGPT Codex. Wrote custom AI agent skills for code review, project conventions and reusable workflows that the <b>whole team now uses</b>.</p></li>
           <li><span>Mentoring</span><p>Mentor engineers, run technical interviews and take part in code and architecture reviews. Work with product, design and backend on requirements, spikes and API design.</p></li>
         </ul>
@@ -286,10 +282,10 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
     <div>
       <div class="grid">
         <div class="card wide rv">
-          <div class="card-top"><span class="badge">In production · Internal</span><span class="mono">2023 — Present</span></div>
-          <h3>Link Swift Package</h3>
-          <p>An internal SDK at Numerator that takes control from the host app, collects data through active and background WebViews, stores it locally and hands results back. Lead iOS developer.</p>
-          <div class="tags"><span>Swift Package Manager</span><span>WebKit</span><span>Realm</span><span>Keychain</span><span>Remote Config</span><span>Statsig</span><span>Crashlytics</span></div>
+          <div class="card-top"><span class="badge">In production · Private</span><span class="mono">2023 — Present</span></div>
+          <h3>Internal Swift SDK</h3>
+          <p>A self-contained Swift package embedded in a consumer app with 1M+ active users. I lead it end to end: modular architecture, local persistence, feature flags, automated tests, release and production monitoring.</p>
+          <div class="tags"><span>Swift Package Manager</span><span>MVVM</span><span>async/await</span><span>SwiftUI</span><span>Feature flags</span><span>Crash monitoring</span></div>
         </div>
         <a class="card rv" href="https://apps.apple.com/us/app/teesas-education-learn/id1595847520" target="_blank" rel="noopener">
           <div class="card-top"><span class="badge">App Store</span><span class="arrow" aria-hidden="true">↗</span></div>
@@ -369,7 +365,6 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
     <h2>Let's build something <em>solid.</em></h2>
     <a class="mail" href="mailto:ayush.pathak021@outlook.com">ayush.pathak021@outlook.com</a>
     <div class="cta">
-      <a class="btn" href="Ayush_Pathak_CV.pdf" target="_blank" rel="noopener">Résumé <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 11l6 6 6-6M5 20h14"/></svg></a>
       <a class="btn" href="https://github.com/ayushP2400" target="_blank" rel="noopener">GitHub</a>
       <a class="btn" href="https://www.linkedin.com/in/ayush-pathak-a563a9151/" target="_blank" rel="noopener">LinkedIn</a>
       <a class="btn" href="https://stackoverflow.com/users/9376772/pathak-ayush" target="_blank" rel="noopener">Stack Overflow</a>
@@ -398,7 +393,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
   }
   var rv=new IntersectionObserver(function(es){
     es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');rv.unobserve(e.target)}});
-  },{rootMargin:'0px 0px -8% 0px'});
+  },{threshold:.05});
   document.querySelectorAll('.rv').forEach(function(el){rv.observe(el)});
 
   new IntersectionObserver(function(es){
