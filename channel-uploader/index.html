@@ -6,6 +6,7 @@
 <li>Uploads a finished video file with a resumable upload (<code>videos.insert</code>).</li>
 <li>Sets the title, description, tags, category, language, "made for kids", the altered-content declaration and a scheduled publish time.</li>
 <li>Sets the custom thumbnail (<code>thumbnails.set</code>) and adds the video to the channel's own playlists (<code>playlistItems.insert</code>).</li>
+<li>Adds the Hindi subtitle track (<code>captions.insert</code>) and the Hindi title/description localization (<code>videos.update</code>), and reads back the uploaded video's status (<code>videos.list</code>).</li>
 <li>Reads the signed-in channel's ID (<code>channels.list</code>, mine=true) to confirm it is uploading to the right channel.</li>
 </ul>
 <h2>How sign-in works</h2>
