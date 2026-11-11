@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ayush Pathak — Senior iOS Engineer</title>
+<meta name="description" content="Senior iOS Engineer with 8+ years shipping production iOS apps and SDKs in Swift, SwiftUI and UIKit. Architecture, test automation, CI/CD and AI-assisted development.">
+<meta name="author" content="Ayush Pathak">
+<link rel="canonical" href="https://ayushp2400.github.io/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Ayush Pathak — Senior iOS Engineer">
+<meta property="og:description" content="8+ years shipping production iOS apps and SDKs in Swift, SwiftUI and UIKit.">
+<meta property="og:url" content="https://ayushp2400.github.io/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#f6f3ec" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#12110f" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23e8492a'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' text-anchor='middle' fill='%23fff'%3EAP%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
+<script>
+(function(){var r=document.documentElement,t;r.classList.add('js');try{t=localStorage.getItem('theme')}catch(e){}if(t==='light'||t==='dark')r.dataset.theme=t})();
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Ayush Pathak","url":"https://ayushp2400.github.io/","jobTitle":"Senior iOS Engineer","worksFor":{"@type":"Organization","name":"Numerator"},"address":{"@type":"PostalAddress","addressLocality":"Jaipur","addressCountry":"IN"},"knowsAbout":["Swift","SwiftUI","UIKit","iOS SDK design","Test automation","CI/CD"],"sameAs":["https://github.com/ayushP2400","https://www.linkedin.com/in/ayush-pathak-a563a9151/","https://stackoverflow.com/users/9376772/pathak-ayush"]}
+</script>
+<style>
+@font-face{font-family:"Instrument Serif";src:url(fonts/instrument-serif.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Instrument Serif";src:url(fonts/instrument-serif-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Geist";src:url(fonts/geist.woff2) format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:"Geist Mono";src:url(fonts/geist-mono.woff2) format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
+
+:root{
+  --bg:#f6f3ec;--surface:#fffdf8;--ink:#17140f;--muted:#6b655a;--line:#ded8ca;
+  --accent:#d8401f;--accent-soft:#f9e3da;--ok:#2f7d4f;
+  --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+  --sans:"Geist",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"Geist Mono",ui-monospace,"SF Mono",Menlo,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#12110f;--surface:#1a1916;--ink:#f1ede4;--muted:#a09a8c;--line:#2e2c27;
+    --accent:#ff6b47;--accent-soft:#33190f;--ok:#62c48a;color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#12110f;--surface:#1a1916;--ink:#f1ede4;--muted:#a09a8c;--line:#2e2c27;
+  --accent:#ff6b47;--accent-soft:#33190f;--ok:#62c48a;color-scheme:dark;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,p,ul{margin:0}
+ul{padding:0;list-style:none}
+::selection{background:var(--accent);color:#fff}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+.mono{font:500 12px/1.4 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:var(--bg);padding:8px 14px;border-radius:8px;z-index:100}
+.skip:focus{left:12px}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .3s}
+.nav.stuck{border-color:var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:28px;height:64px}
+.logo{font:400 26px/1 var(--serif);letter-spacing:-.01em}
+.logo i{color:var(--accent);font-style:normal}
+.links{display:flex;gap:26px;margin-left:auto}
+.links a{font-size:14.5px;color:var(--muted);transition:color .2s;position:relative}
+.links a:hover,.links a.on{color:var(--ink)}
+.links a.on::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:1.5px;background:var(--accent)}
+.theme{width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:none;color:var(--ink);cursor:pointer;display:grid;place-items:center;transition:background .2s,transform .4s}
+.theme:hover{background:var(--surface);transform:rotate(30deg)}
+
+/* hero */
+.hero{padding:88px 0 96px}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.9fr);gap:64px;align-items:end}
+.status{display:inline-flex;align-items:center;gap:10px;margin-bottom:28px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 0 color-mix(in srgb,var(--ok) 60%,transparent);animation:pulse 2.4s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 9px transparent}100%{box-shadow:0 0 0 0 transparent}}
+h1{font:400 clamp(46px,7.4vw,92px)/.98 var(--serif);letter-spacing:-.022em;text-wrap:balance}
+h1 em{color:var(--accent)}
+.lede{margin-top:28px;max-width:54ch;font-size:18.5px;color:var(--muted)}
+.lede strong{color:var(--ink);font-weight:500}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;border:1px solid var(--line);font-size:15px;font-weight:500;transition:transform .2s,background .2s,border-color .2s}
+.btn:hover{transform:translateY(-2px);border-color:var(--ink)}
+.btn.solid{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.btn.solid:hover{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn svg{width:16px;height:16px}
+
+/* test-run panel */
+.run{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;font:400 13px/1.5 var(--mono);box-shadow:0 1px 0 var(--line),0 24px 48px -32px rgba(0,0,0,.28)}
+.run-bar{display:flex;align-items:center;gap:7px;padding:12px 16px;border-bottom:1px solid var(--line);color:var(--muted);font-size:12px}
+.run-bar b{width:10px;height:10px;border-radius:50%;background:var(--line)}
+.run-bar span{margin-left:8px}
+.run ol{margin:0;padding:14px 16px 6px;list-style:none}
+.run li{display:grid;grid-template-columns:18px 1fr auto;gap:8px;padding:6px 0;align-items:baseline;opacity:0;animation:line .45s ease forwards}
+.run li:nth-child(1){animation-delay:.35s}.run li:nth-child(2){animation-delay:.7s}.run li:nth-child(3){animation-delay:1.05s}.run li:nth-child(4){animation-delay:1.4s}.run li:nth-child(5){animation-delay:1.75s}
+.run li .ck{color:var(--ok);font-weight:700}
+.run li .fn{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.run li .val{color:var(--accent);font-weight:600;white-space:nowrap}
+.run-foot{margin:6px 16px 16px;padding-top:12px;border-top:1px dashed var(--line);color:var(--muted);opacity:0;animation:line .45s ease 2.15s forwards}
+.run-foot b{color:var(--ok);font-weight:600}
+@keyframes line{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+
+/* sections */
+section{padding:84px 0;border-top:1px solid var(--line)}
+.sec{display:grid;grid-template-columns:220px minmax(0,1fr);gap:48px}
+.sec-head{position:sticky;top:96px;align-self:start}
+.sec-head .mono{color:var(--accent)}
+h2{font:400 clamp(34px,4vw,46px)/1.05 var(--serif);letter-spacing:-.015em;margin-top:10px}
+
+/* work */
+.job+.job{margin-top:56px;padding-top:56px;border-top:1px dashed var(--line)}
+.job-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 24px;align-items:baseline}
+h3{font:600 21px/1.3 var(--sans);letter-spacing:-.01em}
+.role{color:var(--muted);margin-top:2px}
+.points{margin-top:22px;display:grid;gap:16px}
+.points li{display:grid;grid-template-columns:150px 1fr;gap:20px;font-size:16px}
+.points li>span:first-child{font:500 12px/1.9 var(--mono);letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.points b{font-weight:600;color:var(--ink)}
+.points p{color:color-mix(in srgb,var(--ink) 82%,var(--muted))}
+
+/* projects */
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:26px;display:flex;flex-direction:column;gap:12px;transition:transform .25s,border-color .25s}
+a.card:hover{transform:translateY(-4px);border-color:var(--accent)}
+.card.wide{grid-column:1/-1}
+.card-top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.badge{font:500 11px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:6px 9px;border-radius:999px;background:var(--accent-soft);color:var(--accent)}
+.card h3{font:400 30px/1.1 var(--serif);letter-spacing:-.01em}
+.card p{color:var(--muted);font-size:15.5px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:8px}
+.tags span,.chips span{font:400 12.5px/1 var(--mono);padding:6px 9px;border:1px solid var(--line);border-radius:6px;color:var(--muted)}
+.arrow{font:400 13px var(--mono);color:var(--muted);transition:color .2s,transform .2s}
+a.card:hover .arrow{color:var(--accent);transform:translate(2px,-2px)}
+.sub{margin:44px 0 16px}
+
+/* toolkit */
+.kit{display:grid;gap:0}
+.kit>div{display:grid;grid-template-columns:190px 1fr;gap:20px;padding:20px 0;border-bottom:1px solid var(--line)}
+.kit>div:first-child{padding-top:0}
+.kit>div:last-child{border:0;padding-bottom:0}
+.kit .mono{padding-top:7px}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chips span{background:var(--surface);color:var(--ink);padding:7px 10px}
+
+/* recognition */
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px}
+.list li{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-bottom:1px solid var(--line);font-size:16px}
+.list li span:last-child{font:400 13px/1.9 var(--mono);color:var(--muted);white-space:nowrap}
+.two .mono{display:block;margin-bottom:8px}
+
+/* contact */
+.contact{padding:110px 0 80px;text-align:center}
+.contact h2{font-size:clamp(44px,7.5vw,96px);line-height:1;margin:14px auto 0;max-width:14ch}
+.contact h2 em{color:var(--accent)}
+.mail{display:inline-block;margin-top:34px;font:400 clamp(18px,2.6vw,26px) var(--mono);border-bottom:1.5px solid var(--accent);padding-bottom:4px;transition:color .2s}
+.mail:hover{color:var(--accent)}
+.contact .cta{justify-content:center}
+footer{border-top:1px solid var(--line);padding:26px 0 40px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+
+/* progress pill */
+.pill{position:fixed;left:24px;bottom:24px;z-index:40;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:9px 14px;font:500 12px/1 var(--mono);letter-spacing:.05em;color:var(--muted);display:flex;gap:10px;align-items:center;opacity:0;transform:translateY(8px);transition:opacity .3s,transform .3s;pointer-events:none}
+.pill.show{opacity:1;transform:none}
+.pill b{color:var(--ink);font-weight:600}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+
+@media (max-width:900px){
+  .hero{padding:56px 0 64px}
+  .hero .wrap{grid-template-columns:1fr;gap:44px}
+  .sec{grid-template-columns:1fr;gap:28px}
+  .sec-head{position:static}
+  section{padding:60px 0}
+  .pill{display:none}
+}
+@media (max-width:680px){
+  body{font-size:16px}
+  .wrap{padding:0 20px}
+  .links a:not(.keep){display:none}
+  .grid,.two{grid-template-columns:1fr}
+  .two{gap:36px}
+  .points li,.kit>div{grid-template-columns:1fr;gap:4px}
+  .run{font-size:12px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .run li,.run-foot,.js .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav class="nav" id="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Ayush Pathak, home">Ayush Pathak<i>.</i></a>
+    <div class="links">
+      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#toolkit">Toolkit</a>
+      <a href="#recognition">Recognition</a>
+      <a class="keep" href="#contact">Contact</a>
+    </div>
+    <button class="theme" id="theme" type="button" aria-label="Toggle light and dark theme">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+    </button>
+  </div>
+</nav>
+
+<main id="main">
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <p class="status mono"><span class="dot" aria-hidden="true"></span>Senior iOS Engineer · Jaipur, India</p>
+      <h1>I build iOS apps and SDKs that <em>hold up</em> in production.</h1>
+      <p class="lede">I'm <strong>Ayush Pathak</strong>. For 8+ years I've shipped and operated iOS software in Swift, SwiftUI and UIKit. Today I lead an internal Swift package that runs inside a consumer app with <strong>1M+ active users</strong>, owning it from design and release to production monitoring.</p>
+      <div class="cta">
+        <a class="btn solid" href="mailto:ayush.pathak021@outlook.com">Get in touch
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn" href="https://github.com/ayushP2400" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/ayush-pathak-a563a9151/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://stackoverflow.com/users/9376772/pathak-ayush" target="_blank" rel="noopener">Stack Overflow</a>
+      </div>
+    </div>
+
+    <div class="run" role="img" aria-label="Career highlights shown as a passing test run: ships an SDK to over one million users, raised unit test coverage from 25 to 70 percent, cut memory spikes by about 80 percent, builds every pull request in CI, mentors engineers. Five tests, zero failures.">
+      <div class="run-bar"><b></b><b></b><b></b><span>CareerTests.swift</span></div>
+      <ol>
+        <li><span class="ck">✓</span><span class="fn">testShipsSDKInProduction()</span><span class="val">1M+ users</span></li>
+        <li><span class="ck">✓</span><span class="fn">testRaisesUnitCoverage()</span><span class="val">25% → 70%</span></li>
+        <li><span class="ck">✓</span><span class="fn">testFixesWebViewLeak()</span><span class="val">−80% memory</span></li>
+        <li><span class="ck">✓</span><span class="fn">testBuildsEveryPR()</span><span class="val">CI/CD</span></li>
+        <li><span class="ck">✓</span><span class="fn">testMentorsEngineers()</span><span class="val">reviews</span></li>
+      </ol>
+      <p class="run-foot">Executed 5 tests, with <b>0 failures</b> in 8+ years.</p>
+    </div>
+  </div>
+</header>
+
+<section id="work" data-name="Work">
+  <div class="wrap sec">
+    <div class="sec-head rv"><span class="mono">01</span><h2>Work</h2></div>
+    <div>
+      <article class="job rv">
+        <div class="job-top"><h3>Numerator</h3><span class="mono">Dec 2022 — Present</span></div>
+        <p class="role">Senior iOS Engineer I · iOS Technical Lead</p>
+        <ul class="points">
+          <li><span>SDK design</span><p>Lead engineer of the <b>Link Swift package</b>, an internal SDK for market data collection inside a consumer app with 1M+ active users. Built as a self-contained Swift Package Manager module, first as sole engineer, and now being extended for reuse across more internal apps.</p></li>
+          <li><span>Architecture</span><p>Shape architecture with a fellow senior engineer: MVVM, async/await, and a UIKit-to-SwiftUI migration using generics. Designed the local database, analytics and core modules, and helped drive the move from <b>Realm to SwiftData</b>.</p></li>
+          <li><span>Performance</span><p>Tracked down a leak where 3–4 concurrent WebViews were never deallocated, using Instruments and the Memory Graph Debugger. The fix cut <b>~200&nbsp;MB memory spikes by roughly 80%</b>, back to the normal 30–40&nbsp;MB range.</p></li>
+          <li><span>Reliability</span><p>Caught a crash-rate spike in Crashlytics, halted the release, reproduced the issue, wrote a regression test, then shipped and monitored the fix.</p></li>
+          <li><span>Testing</span><p>Raised unit-test coverage from <b>~25% to ~70% in one year</b> by requiring tests for every feature, bug fix and touched legacy code. CI-enforced unit tests on every PR, plus curated AI-generated edge cases for QA regression.</p></li>
+          <li><span>CI/CD</span><p>Maintain GitHub Actions pipelines for tests, summaries and SwiftLint reports. Built a pipeline that builds, code-signs and publishes an installable build link for every PR adopting a new package version.</p></li>
+          <li><span>AI tooling</span><p>Daily user of GitHub Copilot and ChatGPT Codex. Wrote custom AI agent skills for code review, project conventions and reusable workflows that the <b>whole team now uses</b>.</p></li>
+          <li><span>Mentoring</span><p>Mentor engineers, run technical interviews and take part in code and architecture reviews. Work with product, design and backend on requirements, spikes and API design.</p></li>
+        </ul>
+      </article>
+
+      <article class="job rv">
+        <div class="job-top"><h3>Appentus Technologies</h3><span class="mono">May 2018 — Nov 2022</span></div>
+        <p class="role">Senior iOS Engineer</p>
+        <ul class="points">
+          <li><span>Leadership</span><p>Led and mentored iOS teams of up to four, covering project execution, code reviews and task planning.</p></li>
+          <li><span>Architecture</span><p>Built apps with MVC and MVVM on SOLID principles, using Realm and Core Data, with services over REST, XML, Protobuf and gRPC.</p></li>
+          <li><span>CI/CD</span><p>Set up automated builds, testing and deployment with Fastlane, CircleCI and Xcode Cloud, with unit tests and SwiftLint for quality.</p></li>
+          <li><span>Features</span><p>Delivered in-app purchases, localization, Firebase, Google Maps and socket integrations, with GCD, operation queues and Combine.</p></li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="projects" data-name="Projects">
+  <div class="wrap sec">
+    <div class="sec-head rv"><span class="mono">02</span><h2>Projects</h2></div>
+    <div>
+      <div class="grid">
+        <div class="card wide rv">
+          <div class="card-top"><span class="badge">In production · Internal</span><span class="mono">2023 — Present</span></div>
+          <h3>Link Swift Package</h3>
+          <p>An internal SDK at Numerator that takes control from the host app, collects data through active and background WebViews, stores it locally and hands results back. Lead iOS developer.</p>
+          <div class="tags"><span>Swift Package Manager</span><span>WebKit</span><span>Realm</span><span>Keychain</span><span>Remote Config</span><span>Statsig</span><span>Crashlytics</span></div>
+        </div>
+        <a class="card rv" href="https://apps.apple.com/us/app/teesas-education-learn/id1595847520" target="_blank" rel="noopener">
+          <div class="card-top"><span class="badge">App Store</span><span class="arrow" aria-hidden="true">↗</span></div>
+          <h3>Teesas</h3>
+          <p>An education app with an eBook and course marketplace: smooth purchase flow, video player, PDF viewer and downloads. Lead iOS developer.</p>
+          <div class="tags"><span>In-App Purchase</span><span>Apple Pay</span><span>SSL Pinning</span><span>Core Data</span></div>
+        </a>
+        <a class="card rv" href="https://apps.apple.com/us/app/hoofzy/id1611556348" target="_blank" rel="noopener">
+          <div class="card-top"><span class="badge">App Store</span><span class="arrow" aria-hidden="true">↗</span></div>
+          <h3>Hoofzy</h3>
+          <p>A pet care and social app with a pixel-perfect iPhone UI over HTTP/2 services. Lead iOS developer in a team of two.</p>
+          <div class="tags"><span>gRPC</span><span>Protobuf</span><span>Realm</span><span>OneSignal</span></div>
+        </a>
+      </div>
+
+      <p class="mono sub rv">On the side</p>
+      <div class="grid">
+        <a class="card rv" href="https://ayushp2400.github.io/homewhistle/" target="_blank" rel="noopener">
+          <div class="card-top"><span class="badge">Indie · iOS</span><span class="arrow" aria-hidden="true">↗</span></div>
+          <h3>Homewhistle</h3>
+          <p>A calm, private reminder app for bills, pantry, pets, plants, medication and the rest of home.</p>
+        </a>
+        <a class="card rv" href="https://ayushp2400.github.io/diceflick-site/" target="_blank" rel="noopener">
+          <div class="card-top"><span class="badge">Indie · iOS</span><span class="arrow" aria-hidden="true">↗</span></div>
+          <h3>DiceFlick</h3>
+          <p>A 3D dice roller for iPhone and iPad. Roll d4 to d20 with a tap or a shake. No ads, no accounts, no tracking.</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="toolkit" data-name="Toolkit">
+  <div class="wrap sec">
+    <div class="sec-head rv"><span class="mono">03</span><h2>Toolkit</h2></div>
+    <div class="kit rv">
+      <div><span class="mono">iOS</span><div class="chips"><span>Swift</span><span>SwiftUI</span><span>UIKit</span><span>Swift Concurrency</span><span>Combine</span><span>SwiftData</span><span>Core Data</span><span>Realm</span><span>Keychain</span><span>WebKit</span><span>In-App Purchases</span><span>Apple Pay</span></div></div>
+      <div><span class="mono">Architecture</span><div class="chips"><span>MVVM</span><span>MVC</span><span>SOLID</span><span>Modular design</span><span>SDK design</span><span>Swift Package Manager</span><span>CocoaPods</span></div></div>
+      <div><span class="mono">Testing &amp; quality</span><div class="chips"><span>XCTest</span><span>XCUITest</span><span>Swift Testing</span><span>TDD</span><span>SwiftLint</span><span>Instruments</span><span>Memory Graph Debugger</span></div></div>
+      <div><span class="mono">CI/CD</span><div class="chips"><span>GitHub Actions</span><span>Fastlane</span><span>CircleCI</span><span>Xcode Cloud</span><span>Code signing</span></div></div>
+      <div><span class="mono">Networking</span><div class="chips"><span>REST</span><span>gRPC</span><span>Protocol Buffers</span><span>URLSession</span><span>WebSockets</span><span>SSL pinning</span></div></div>
+      <div><span class="mono">Monitoring</span><div class="chips"><span>Firebase Crashlytics</span><span>Remote Config</span><span>Push Notifications</span><span>Statsig</span><span>OneSignal</span></div></div>
+      <div><span class="mono">AI-assisted dev</span><div class="chips"><span>GitHub Copilot</span><span>ChatGPT Codex</span><span>Custom agent skills</span><span>AI code review</span><span>AI test generation</span><span>MCP</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="recognition" data-name="Recognition">
+  <div class="wrap sec">
+    <div class="sec-head rv"><span class="mono">04</span><h2>Recognition</h2></div>
+    <div class="two">
+      <div class="rv">
+        <span class="mono">Awards &amp; community</span>
+        <ul class="list">
+          <li><span>Numerator Star Performer</span><span>Q3 2026</span></li>
+          <li><span>Numerator Star Performer</span><span>Q4 2025</span></li>
+          <li><span>Numerator Spot Award</span><span>2024</span></li>
+          <li><span>Attended try! Swift Tokyo</span><span>2025</span></li>
+        </ul>
+      </div>
+      <div class="rv">
+        <span class="mono">Education &amp; languages</span>
+        <ul class="list">
+          <li><span>B.Tech, Computer Engineering</span><span>2015 — 2019</span></li>
+          <li><span>English</span><span>Fluent</span></li>
+          <li><span>Hindi</span><span>Native</span></li>
+          <li><span>Japanese <span lang="ja">日本語</span></span><span>JLPT N5 · studying</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact" data-name="Contact">
+  <div class="wrap rv">
+    <span class="mono">05 · Contact</span>
+    <h2>Let's build something <em>solid.</em></h2>
+    <a class="mail" href="mailto:ayush.pathak021@outlook.com">ayush.pathak021@outlook.com</a>
+    <div class="cta">
+      <a class="btn" href="https://github.com/ayushP2400" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/ayush-pathak-a563a9151/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://stackoverflow.com/users/9376772/pathak-ayush" target="_blank" rel="noopener">Stack Overflow</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap mono"><span>© 2026 Ayush Pathak</span><span>Hand-built HTML &amp; CSS · No trackers</span></div>
+</footer>
+
+<div class="pill" id="pill" aria-hidden="true"><b id="pill-n">01</b><span>/ 05</span><span id="pill-t">Work</span></div>
+
+<script>
+(function(){
+  var root=document.documentElement,nav=document.getElementById('nav'),pill=document.getElementById('pill'),
+      pn=document.getElementById('pill-n'),pt=document.getElementById('pill-t');
+  document.getElementById('theme').addEventListener('click',function(){
+    var dark=root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;
+    root.dataset.theme=dark?'light':'dark';
+    try{localStorage.setItem('theme',root.dataset.theme)}catch(e){}
+  });
+  if(!('IntersectionObserver' in window)){
+    document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in')});return;
+  }
+  var rv=new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');rv.unobserve(e.target)}});
+  },{rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){rv.observe(el)});
+
+  new IntersectionObserver(function(es){
+    var away=!es[0].isIntersecting;nav.classList.toggle('stuck',away);pill.classList.toggle('show',away);
+  },{rootMargin:'-80px 0px 0px 0px'}).observe(document.getElementById('top'));
+
+  var secs=[].slice.call(document.querySelectorAll('section[data-name]')),links=document.querySelectorAll('.links a');
+  var spy=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting)return;
+      var i=secs.indexOf(e.target);
+      pn.textContent='0'+(i+1);pt.textContent=e.target.dataset.name;
+      links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)});
+    });
+  },{rootMargin:'-45% 0px -50% 0px'});
+  secs.forEach(function(s){spy.observe(s)});
+})();
+</script>
+</body>
+</html>
